@@ -21,70 +21,64 @@
     height: 100vh;
   }
   .container {
-    background-color: rgba(255, 255, 255, 0.178);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    overflow: hidden;
-  }
-  textarea {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    outline: none;
-    resize: none;
-    font-size: 20px;
-    font-weight: 400;
-    color: #333;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-  }
-  button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: #024194;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-  }
-  button:hover {
-    background-color: #042b5e;
-    transform: scale(1.05);
-  }
-  h1 {
-    text-align: center;
-    font-size: 34px;
-    font-weight: 500;
-  }
-  .stats p {
-    font-size: 18px;
-    padding: 4px 0;
-    border-bottom: 1px solid #ccc;
-  }
+     background-color: rgba(255, 255, 255, 0.178);
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      outline: none;
+      resize: none;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #024194;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #042b5e;
+      transform: scale(1.05);
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .stats p {
+      font-size: 18px;
+      padding: 4px 0;
+      border-bottom: 1px solid #ccc;
+    }
 </style>
 <body>
   <div class="container">
     <h1>Words & Character Counter</h1>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your text here..."></textarea>
+    <textarea col="30" row="10" placeholder="Enter your text here..."></textarea>
     <button>Count</button>
     <div class="stats">
-    <p>Words: <span id="Words">0</span></p>
-    <p>Characters: <span id="Characters">0</span></p>
-    <p>Lines: <span id="Lines">0</span></p>
-    <p>Spaces: <span id="Spaces">0</span></p>
+      <p>Words: <span id="Words">0</span></p>
+      <p>Characters: <span id="Characters">0</span></p>
+      <p>Lines: <span id="Lines">0</span></p>
+      <p>Spaces: <span id="Spaces">0</span></p>
     </div>
   </div>
   <script>
