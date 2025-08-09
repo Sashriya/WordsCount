@@ -69,12 +69,13 @@
     font-size: 34px;
     font-weight: 500;
   }
-  p {
+  .stats p {
     font-size: 20px;
     font-weight: 400;
     border-bottom: 1px solid #ccc;
     padding: 2px;
     margin: 5px 0;
+    text-align: left;
   }
 </style>
 <body>
@@ -82,10 +83,12 @@
     <h1>Words & Character Counter</h1>
     <textarea name="" id="" cols="30" rows="10" placeholder="Enter your text here..."></textarea>
     <button>Count</button>
+    <div class="stats">
     <p>Words: <span id="Words">0</span></p>
     <p>Characters: <span id="Characters">0</span></p>
     <p>Lines: <span id="Lines">0</span></p>
     <p>Spaces: <span id="Spaces">0</span></p>
+    </div>
   </div>
   <script>
     const textarea = document.querySelector('textarea');
